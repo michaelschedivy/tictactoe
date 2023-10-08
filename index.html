@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Farro">
+        <link rel="stylesheet" href="main.css">
+        <meta charset="UTF-8">
+        <title>Piškvorky</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">PIŠKVORKY</h1>
+        <div class="control">
+            <label>Barva pro X</label>
+            <select id="colorX" onclick="setColorX('colorX')">
+                <option value="#0800FF">Modrá</option>
+                <option value="#009343">Zelená</option>
+                <option value="#FF0000">Červená</option>
+                <option value="#F1FF2C">Žlutá</option>
+                <option value="#B400FB">Fialová</option>
+                <option value="#FFC000">Oranžová</option>
+                <option value="#000000">Černá</option>
+                <option value="#00EAFF">Světle modrá</option>
+                <option value="#00FF25">Světle zelená</option>
+                <option value="#FF00CA">Růžová</option>
+            </select>
+            <label>Barva pro O</label>
+            <select id="colorO" onclick="setColorO('colorO')">
+                <option value="#FF0000">Červená</option>
+                <option value="#009343">Zelená</option>
+                <option value="#0800FF">Modrá</option>
+                <option value="#F1FF2C">Žlutá</option>
+                <option value="#B400FB">Fialová</option>
+                <option value="#FFC000">Oranžová</option>
+                <option value="#000000">Černá</option>
+                <option value="#00EAFF">Světle modrá</option>
+                <option value="#00FF25">Světle zelená</option>
+                <option value="#FF00CA">Růžová</option>
+            </select>
+
+            <br>
+
+            <button id="newGame" onclick="newGame(0)" class="off">Další kolo</button>
+            <button id="reset" onclick="reset()" class="resetButton">Ukončit hru</button>
+        </div>
+
+        <div class="score">
+            <h3>Skóre</h3>
+            <span id="xxx" style="color: #0066ff">X</span><span>:</span><span id="ooo" style="color: #ff0000">O</span>
+            <br>
+            <span id="scoreX">0</span><span>:</span><span id="scoreO">0</span>
+        </div>
+
+        <div class="info">
+            <h2 id="info">Vítejte u hry Piškvorky! Kliknutím do pole zahájíte hru.</h2>
+            <h2 id="nextO" class="off">Na řadě je <span id="o" style="color: #0066ff">O</span></h2>
+            <h2 id="nextX" class="off">Na řadě je <span id="x" style="color: #ff0000">X</span></h2>
+            <h2 id="winO" class="off">Vyhrává <span id="oo" style="color: #ff0000">O</span></h2>
+            <h2 id="winX" class="off">Vyhrává <span id="xx" style="color: #0066ff">X</span></h2>
+            <h2 id="winN" class="off">Remíza</h2>
+        </div>
+        <div id="tictactoe" class="tictactoe">
+            <button id="1" onclick="ticTacToe(1)" class="buttonClear">...</button>
+            <button id="2" onclick="ticTacToe(2)" class="buttonClear">...</button>
+            <button id="3" onclick="ticTacToe(3)" class="buttonClear">...</button>
+            <br>
+            <button id="4" onclick="ticTacToe(4)" class="buttonClear">...</button>
+            <button id="5" onclick="ticTacToe(5)" class="buttonClear">...</button>
+            <button id="6" onclick="ticTacToe(6)" class="buttonClear">...</button>
+            <br>
+            <button id="7" onclick="ticTacToe(7)" class="buttonClear">...</button>
+            <button id="8" onclick="ticTacToe(8)" class="buttonClear">...</button>
+            <button id="9" onclick="ticTacToe(9)" class="buttonClear">...</button>
+
+            <script src="ticTacToe.js"></script>
+        </div>
+
+        <div class="footer">
+            <h4>Michael Schedivý 2023</h4>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,169 @@
+body{
+    font-family: 'Farro', sans-serif;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+    margin: auto;
+}
+
+.score{
+    text-align: center;
+}
+.score span{
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.tictactoe{
+    text-align: center;
+}
+
+button{
+    margin: 5px;
+}
+
+.buttonClear {
+    background-color: #ffffff !important;
+    -webkit-border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    border-radius: 6px !important;
+    border: 1px solid #000000 !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    color: #ffffff !important;
+    font-family: Arial !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    padding: 32px 32px !important;
+    text-decoration: none !important;
+}
+.buttonClear:hover {
+    background-color:#f6f6f6;
+}
+.buttonClear:active {
+    position:relative;
+    top:1px;
+}
+
+.buttonX {
+    background-color:#ffffff;
+    border-radius:6px;
+    border:1px solid #ff0000;
+    display:inline-block;
+    cursor:pointer;
+    color: #ff0000;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:32px 33px;
+    text-decoration:none;
+}
+.buttonX:hover {
+    background-color:#f6f6f6;
+}
+.buttonX:active {
+    position:relative;
+    top:1px;
+}
+
+.buttonO {
+   background-color:#ffffff;
+   border-radius:6px;
+   border:1px solid #0066ff;
+   display:inline-block;
+   cursor:pointer;
+   color: #0080ff;
+   font-family:Arial;
+   font-size:15px;
+   font-weight:bold;
+   padding:32px 32px;
+   text-decoration:none;
+}
+.buttonO:hover {
+    background-color:#f6f6f6;
+}
+.buttonO:active {
+    position:relative;
+    top:1px;
+}
+
+.on{
+    display:inline-block;
+    font-family: Arial;
+}
+
+.off{
+    display: none;
+}
+
+.newGameButton {
+    text-align: center;
+    background-color: #1eff00;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #08ff00;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 24px;
+    text-decoration: none;
+}
+.newGameButton:hover {
+    background-color: #149400;
+}
+.newGameButton:active {
+    position:relative;
+    top:1px;
+}
+
+.resetButton {
+    text-align: center;
+    background-color: #ff0000;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ff0000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 24px;
+    text-decoration: none;
+}
+.resetButton:hover {
+    background-color: #940000;
+}
+.resetButton:active {
+    position:relative;
+    top:1px;
+}
+
+.control{
+    text-align: center;
+}
+
+.wintab{
+    background-color: gray !important;
+    display: flex !important;
+    text-align: center !important;
+    position: relative !important;
+    margin: auto !important;
+    width: 50% !important;
+}
